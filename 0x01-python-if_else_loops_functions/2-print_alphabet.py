@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 import string
-for letter in string.ascii_lowercase:
-    print(letter, end="")
+for i in range(0, 26):
+    print("{}".format(string.ascii_lowercase[i]), end="")
