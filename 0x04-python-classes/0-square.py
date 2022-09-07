@@ -15,4 +15,4 @@ class Square:
             size (int): size of square
         
         """
-        self.__size = size
+        self.__size = size #: doc comment inline
