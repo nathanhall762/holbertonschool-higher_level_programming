@@ -7,11 +7,11 @@ This is a square
 
 class Square:
     def __init__(self, size):
-        """__init__
+        """Initializes size __init__
         
         Initializes the size of the square.
         
-        Attributes:
+        Args:
             size (int): size of square.
         
         """
