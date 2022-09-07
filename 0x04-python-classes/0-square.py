@@ -12,7 +12,7 @@ class Square:
         Initializes the size of the square.
         
         Attributes:
-            size (int): size of square
+            size (int): size of square.
         
         """
         self.__size = size
