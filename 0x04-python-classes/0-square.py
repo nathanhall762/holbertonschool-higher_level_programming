@@ -5,6 +5,7 @@ This is a square
 
 """
 
+
 class Square:
     """Summary of class here.
 
@@ -16,4 +17,4 @@ class Square:
     """
     def __init__(self, size):
         """Inits SampleClass with blah."""
-        self.__size = size #: doc comment inline
+        self.__size = size
