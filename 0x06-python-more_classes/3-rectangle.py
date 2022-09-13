@@ -53,3 +53,8 @@ class Rectangle():
             else:
                 string += (('#' * self.__width) + '\n')
         return string
+
+    def __repr__(self):
+        w = str(eval('self.width'))
+        h = str(eval('self.height'))
+        return 'Rectangle(' + w + ', ' + h + ')'
