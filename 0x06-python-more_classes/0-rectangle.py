@@ -5,17 +5,33 @@
 class Rectangle:
     """ documentation	"""
     def __init__(self, width=0, height=0):
-        self.height = height
-        self.width = width
+        self._height = height
+        self._width = width
 
+    @property
     def height(self):
-        return self.height
+        print("getter height")
+        return self._height
 
+    @height.setter
     def height(self, value):
-        self.height = value
+        if value < 0:
+            raise ValueError("height must be >= 0")
+        if isinstance(value, int):
+            self._height = value
+        else:
+            raise TypeError("height must be an integer")
 
+    @property
     def width(self):
-        return self.width
+        print("getter width")
+        return self._width
 
+    @width.setter
     def width(self, value):
-        self.width = value
+        if value < 0:
+            raise ValueError("width must be >= 0")
+        if isinstance(value, int):
+            self._width = value
+        else:
+            raise TypeError("width must be an integer")
