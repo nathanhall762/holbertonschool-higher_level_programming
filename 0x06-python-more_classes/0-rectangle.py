@@ -16,10 +16,8 @@ class Rectangle:
     def height(self, value):
         if isinstance(value, int):
             if value < 0:
-                print("raise error")
                 raise ValueError("height must be >= 0")
-            else:
-                self._height = value
+            self._height = value
         else:
             raise TypeError("height must be an integer")
 
@@ -31,9 +29,7 @@ class Rectangle:
     def width(self, value):
         if isinstance(value, int):
             if value < 0:
-                print("raise error")
                 raise ValueError("width must be >= 0")
-            else:
-                self._width = value
+            self._width = value
         else:
             raise TypeError("width must be an integer")
