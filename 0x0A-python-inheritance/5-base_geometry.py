@@ -3,4 +3,5 @@
 
 
 class BaseGeometry():
+    """ documentation """
     pass
