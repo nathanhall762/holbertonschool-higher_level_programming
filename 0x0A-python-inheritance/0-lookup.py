@@ -1,7 +1,8 @@
 #!/usr/bin/python3
+""" documentation """
+
+
 def lookup(obj):
-    """
-    documentation
-    """
+    """ documentation """
 
     return dir(obj)
