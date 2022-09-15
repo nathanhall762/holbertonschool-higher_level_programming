@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ documentation """
 
+
 class MyList(list):
     """ documentation """
 
