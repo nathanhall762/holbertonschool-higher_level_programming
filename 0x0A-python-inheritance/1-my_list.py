@@ -1,3 +1,9 @@
 #!/usr/bin/python3
-def print_sorted(self):
-    
+""" documentation """
+
+Class MyList(list):
+    """ documentation """
+
+    def print_sorted(self):
+        """ documentation """
+        print(sorted(self))
