@@ -2,9 +2,6 @@
 """ documentation """
 
 
-from multiprocessing.sharedctypes import Value
-
-
 class BaseGeometry():
     """ documentation """
     def area(self):
