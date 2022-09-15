@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ documentation """
 
-Class MyList(list):
+class MyList(list):
     """ documentation """
 
     def print_sorted(self):
