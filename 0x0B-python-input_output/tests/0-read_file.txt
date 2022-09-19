@@ -1,0 +1,12 @@
+Using ``read_file``
+-----------------------
+
+First import ``read_file``
+
+    >>> read_file = __import__('0-read_file').read_file
+
+Now use it:
+
+Different File Permissions:
+(e.g. r = read, w = write, a = append, r+ = read+write, omit = r)
+	>>> read_file()
