@@ -81,17 +81,21 @@ class Rectangle(Base):
                                                 self.id, self.__x, self.__y,
                                                 self.__width, self.__height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ updates rectangle attributes """
 
-        for idx in range(len(args)):
-            if idx == 0:
-                super().__init__(args[idx])
-            if idx == 1:
-                self.__width = args[idx]
-            if idx == 2:
-                self.__height = args[idx]
-            if idx == 3:
-                self.__x = args[idx]
-            if idx == 4:
-                self.__y = args[idx]
+        for arg in kwargs.values():
+            for k, v in kwargs.items():
+                setattr(self, k, v)
+        else:
+            for idx in range(len(args)):
+                if idx == 0:
+                    super().__init__(args[idx])
+                if idx == 1:
+                    self.__width = args[idx]
+                if idx == 2:
+                    self.__height = args[idx]
+                if idx == 3:
+                    self.__x = args[idx]
+                if idx == 4:
+                    self.__y = args[idx]
