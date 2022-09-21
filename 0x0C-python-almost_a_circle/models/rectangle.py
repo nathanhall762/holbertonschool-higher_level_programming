@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """ documentation """
+import sys
 from models.base import Base
 
 
@@ -79,3 +80,17 @@ class Rectangle(Base):
         return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
                                                 self.id, self.__x, self.__y,
                                                 self.__width, self.__height)
+
+    def update(self, *args):
+        for idx in range(len(args)):
+            if idx == 0:
+                super().__init__(args[idx])
+            if idx == 1:
+                self.__width = args[idx]
+            if idx == 2:
+                self.__height = args[idx]
+            if idx == 3:
+                self.__x = args[idx]
+            if idx == 4:
+                self.__y = args[idx]
+
