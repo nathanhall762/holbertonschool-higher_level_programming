@@ -68,10 +68,12 @@ class Rectangle(Base):
     def display(self):
         """ displays a rectangle """
 
-        for i in range(0, self.__width):
-            for j in range(0, self.__height):
-                print('#', end='')
-            print()
+        if self.__y != 0:
+            for idx in range(0, self.__y):
+                print()
+
+        for i in range(0, self.__height):
+            print((self.__x * ' ') + (self.__width * '#'))
 
     def __str__(self):
         return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
