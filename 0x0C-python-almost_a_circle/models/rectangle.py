@@ -84,7 +84,7 @@ class Rectangle(Base):
     def update(self, *args, **kwargs):
         """ updates rectangle attributes """
 
-        for arg in kwargs.values():
+        if len(kwargs) > 0:
             for k, v in kwargs.items():
                 setattr(self, k, v)
         else:
