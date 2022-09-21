@@ -90,7 +90,7 @@ class Rectangle(Base):
         else:
             for idx in range(len(args)):
                 if idx == 0:
-                    super().__init__(args[idx])
+                    self.id = args[idx]
                 if idx == 1:
                     self.width = args[idx]
                 if idx == 2:

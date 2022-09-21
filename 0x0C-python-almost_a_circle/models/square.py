@@ -23,3 +23,20 @@ class Square(Rectangle):
         return "[{}] ({}) {}/{} - {}".format(self.__class__.__name__,
                                              self.id, self.x, self.y,
                                              self.width)
+
+    def update(self, *args, **kwargs):
+        """ updates square attributes """
+
+        if len(kwargs) > 0:
+            for k, v in kwargs.items():
+                setattr(self, k, v)
+        else:
+            for idx in range(len(args)):
+                if idx == 0:
+                    self.id = args[idx]
+                if idx == 1:
+                    self.size = args[idx]
+                if idx == 2:
+                    self.x = args[idx]
+                if idx == 3:
+                    self.y = args[idx]
