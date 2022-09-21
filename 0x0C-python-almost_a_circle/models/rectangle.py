@@ -82,6 +82,8 @@ class Rectangle(Base):
                                                 self.__width, self.__height)
 
     def update(self, *args):
+        """ updates rectangle attributes """
+
         for idx in range(len(args)):
             if idx == 0:
                 super().__init__(args[idx])
@@ -93,4 +95,3 @@ class Rectangle(Base):
                 self.__x = args[idx]
             if idx == 4:
                 self.__y = args[idx]
-
