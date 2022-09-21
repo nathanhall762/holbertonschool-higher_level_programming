@@ -92,10 +92,10 @@ class Rectangle(Base):
                 if idx == 0:
                     super().__init__(args[idx])
                 if idx == 1:
-                    self.__width = args[idx]
+                    self.width = args[idx]
                 if idx == 2:
-                    self.__height = args[idx]
+                    self.height = args[idx]
                 if idx == 3:
-                    self.__x = args[idx]
+                    self.x = args[idx]
                 if idx == 4:
-                    self.__y = args[idx]
+                    self.y = args[idx]
