@@ -40,3 +40,12 @@ class Square(Rectangle):
                     self.x = args[idx]
                 if idx == 3:
                     self.y = args[idx]
+
+    def to_dictionary(self):
+        """ documentation """
+        return {
+            'id': self.id,
+            'x': self.x,
+            'size': self.size,
+            'y': self.y,
+        }
