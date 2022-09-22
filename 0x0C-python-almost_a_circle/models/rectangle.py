@@ -99,3 +99,13 @@ class Rectangle(Base):
                     self.x = args[idx]
                 if idx == 4:
                     self.y = args[idx]
+
+    def to_dictionary(self):
+        """ documentation """
+        return {
+            'x': self.__x,
+            'y': self.__y,
+            'id': self.id,
+            'height': self.__height,
+            'width': self.__width,
+        }
