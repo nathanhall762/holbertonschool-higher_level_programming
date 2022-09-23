@@ -35,6 +35,5 @@ class Base:
                 json_add.append(element.to_dictionary())
             return f.write(cls.to_json_string(json_add))
 
-    @staticmethod
-    def from_json_string(json_string):
-        
+#    @staticmethod
+#    def from_json_string(json_string):
