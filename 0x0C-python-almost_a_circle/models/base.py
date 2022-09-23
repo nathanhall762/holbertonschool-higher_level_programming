@@ -18,16 +18,17 @@ class Base:
     def to_json_string(list_dictionaries):
         """ returns the JSON string representation of list_dictionaries """
 
-        if list_dictionaries is None:
+        if list_dictionaries == None:
             return []
         return json.dumps(list_dictionaries)
 
+    @classmethod
     def save_to_file(cls, list_objs):
         """ writes the JSON string representation of list_objs to a file """
 
         filename = cls.__name__ + '.json'
         with open(filename, mode='w') as f:
-            if list_objs is None:
+            if list_objs == None:
                 return f.write(cls.to_json_string(None))
             json_add = []
             for element in list_objs:
