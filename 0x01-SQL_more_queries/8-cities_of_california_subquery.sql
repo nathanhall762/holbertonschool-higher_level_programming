@@ -2,5 +2,6 @@
 -- can be found in the database hbtn_0d_usa
 SELECT cities.id, cities.name
 FROM cities, states
-WHERE cities.id = state.id AND state.name = 'California'
+WHERE cities.id = state.id
+	AND state.name = 'California'
 ORDER BY cities.id ASC;
