@@ -14,5 +14,9 @@ if __name__ == "__main__":
 
     session = Session()
 
-    for instance in session.query(State).order_by(State.id)[0:1]:
+
+    instance = session.query(State).order_by(State.id).first()
+    if instance is None:
+        print('Nothing')
+    else:
         print('{}: {}'.format(instance.id, instance.name))
