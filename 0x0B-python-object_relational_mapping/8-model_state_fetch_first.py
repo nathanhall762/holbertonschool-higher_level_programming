@@ -7,6 +7,7 @@ from sqlalchemy.orm import sessionmaker
 
 
 if __name__ == "__main__":
+    """documentation"""
     Session = sessionmaker(bind=create_engine
                            ('mysql+mysqldb://{}:{}@localhost:3306/{}'.format
                             (argv[1], argv[2], argv[3])))
