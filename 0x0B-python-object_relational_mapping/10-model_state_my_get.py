@@ -16,6 +16,6 @@ if __name__ == "__main__":
 
     instance = session.query(State).filter(State.name == argv[4]).first()
     if instance is None:
-        print('Nothing')
+        print('Not found')
     else:
         print('{}'.format(instance.id))
