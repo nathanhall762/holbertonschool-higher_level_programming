@@ -13,5 +13,5 @@ if __name__ == "__main__":
 
     session = Session()
 
-    for instance in session.query(State).order_by(State.id):
+    for instance in session.query(State).order_by(State.id)[0:1]:
         print('{}: {}'.format(instance.id, instance.name))
