@@ -14,7 +14,6 @@ if __name__ == "__main__":
 
     session = Session()
 
-
     instance = session.query(State).order_by(State.id).first()
     if instance is None:
         print('Nothing')
