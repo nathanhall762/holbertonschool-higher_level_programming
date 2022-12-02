@@ -7,11 +7,11 @@ module.exports = class Rectangle {
 		}
 	}
 	print () {
-		for (let i = 0; i < this.height; ++1) {
+		for (let i = 0; i < this.height; ++i) {
 			let j =0;
 			
 			for (; j < this.width; ++j) {
-				ProcessingInstruction.stdout.write('X');
+				process.stdout.write('X');
 			}
 			if (j === this.width) {
 				console.log('');
